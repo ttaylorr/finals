@@ -1,7 +1,7 @@
 # finals
 
 This repository contains all the materials used to study for my Junior year
-finals, which are comrpised mainly of LaTeX files and rendered PDFs.
+finals, which are comprised mainly of LaTeX files and rendered PDFs.
 
 ## classes
 
