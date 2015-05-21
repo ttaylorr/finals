@@ -3,3 +3,6 @@
 *.log
 *.dvi
 *.toc
+
+# PDFs
+*.pdf
