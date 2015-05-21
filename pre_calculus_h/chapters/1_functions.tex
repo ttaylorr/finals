@@ -1,0 +1,162 @@
+\chapter{Functions and Graphs}
+
+\section{Slope}
+Slope defines the average rate of change on a function in a given interval,
+\(\Delta x\) (this expression is defined as $x_2-x_1$).
+
+Consider a function $f(x)$.  $f$ takes in x-coordinates, and spits out
+corresponding y-coordinates, creating a set of ordered pairs that produces a
+line, curve, or otherwise.
+
+The formal definition of slope is given as follows:
+\begin{equation}
+m=\frac{f(x_2)-f(x_1)}{x_2-x_1}
+\end{equation}
+
+\subsection{Point-slope form}
+Given the coordinate pair of some point in the x-y plane, and the slope of any
+arbitrary line $m$, we can develop an equation for the line that has the slope
+$m$ and goes through the coordinate $(x, y)$.
+
+The general equation of that line is given as follows:
+\begin{equation}
+y-y_1=m(x-x_1)
+\end{equation}
+
+\subsection{Sketching lines}
+The general equation of a linear line is as follows:
+\begin{equation}
+y=mx+b
+\end{equation}
+
+Therefore, the y-intercept is given when $x=0$.  To solve for the y-intercept of
+the line given above, we evaluate it, plugging $0$ in for $x$, producing a
+coordinate pair of $(0, f(0))$.
+
+To sketch a line, preform the following steps:
+\begin{enumerate}
+\item{Find the coordinate of the y-intercept of the graph, according to the rule
+given above}
+\item{Sketch that location into the coordinate plane}
+\item{Construct the two adjacent points on the plane according to the slope $m$
+and the definition of slope}
+\item{Connect the dots}
+\end{enumerate}
+
+\subsection{Properties of Slope}
+Two lines are parallel iff the following condition is met: $m_1=m_2$.
+
+\section{Functions}
+A function $f$ maps a set of x-coordinates ($A$) to a set of y-coordinates
+($B$).  Each element in $A$ is mapped to \textit{exactly one} point from the set
+$B$.
+
+\begin{itemize}
+\item{Each element of $A$ must be matched to an element of $B$}
+\item{Some elements of $B$ may not be matched with any elements of $A$}
+\item{Two or more elements of $A$ may be matched with the same element $B$}
+\item{An element of $A$ can not be matched with more than one distinct element
+of $B$}
+\end{itemize}
+
+The difference quotient is defined as follows, and becomes important later:
+\begin{equation}
+\frac{f(x+h)-f(x)}{h}, h \ne 0
+\end{equation}
+
+Some formal definitions follow:
+\begin{description}
+\item[Function]{a relationship between two variables such that to each value of
+the independent variable there is exactly one value of the dependent variable}
+\item[Function notation]{$y=f(x)$}
+\item[Domain]{the set of values $x$ for which $f$ can produce real values}
+\item[Range]{the set of values that $f$ can produce for all given $x$ in the
+domain}
+\item[Implied domain]{the set of real numbers that satisfy the expression for
+which $f$ is defined upon}
+\end{description}
+
+\section{Graphs of functions}
+A function can be defined on any given interval as one of three things:
+increasing, decreasing, or constant. The classifications of each follow:
+
+For any interval $x_1$, $x_2$...
+\begin{itemize}
+\item The function is increasing for all $x$ such that $f(x_1)<f(x_2)$
+\item The function is decreasing for all $x$ such that $f(x_1)>f(x_2)$
+\item The function is constant for all $x$ such that $f(x_1)=f(x_2)$
+\end{itemize}
+
+A function has a relative minimum when there exists an interval $(x_1,x_2)$ such
+that there is an $a$ that $x_1<x<x_2$ and $f(a) \leq f(x)$.
+
+Conversly, a function has a relative maximum when there exists an interval
+$(x_1,x_2)$ such that there is an $a$ that $x_1<x<x_2$ and $f(a) \geq f(x)$.
+
+\subsection{Even and Odd functions}
+\begin{itemize}
+\item A function is even such that for all $x$ in the domain of $f$,
+$f(-x)=f(x)$
+\item A function is odd such that for all $x$ in the domain of $f$,
+$f(-x)=-f(x)$
+\end{itemize}
+
+\section{Translations}
+There are several types of translations that can be applied to parent functions
+and what will become their "children".  For a parent function $f$, you can
+produce a child function $g$ such that $g$ is defined in terms of $f(x)$.  The
+simple translations follow:
+
+\begin{enumerate}
+\item Vertical shift $c$ units upwards: $g(x)=f(x)+c$
+\item Vertical shift $c$ units downwards: $g(x)=f(x)-c$
+\item Horizontal shift $c$ units to the left: $g(x)=f(x+c)$
+\item Horizontal shift $c$ units to the right: $g(x)=f(x-c)$
+\end{enumerate}
+
+To reflect a function across an axis, take the following advice:
+
+\begin{enumerate}
+\item A reflection in the $x$-axis for a function $f$: $g(x)=-f(x)$
+\item A reflection in the $y$-axis for a function $f$: $g(x)=f(-x)$
+\end{enumerate}
+
+To stretch or shirnk a function $g(x)$ in terms of $f(x)$, simply multiply $f$
+by a scalar $c$.
+
+\section{Combinations of Functions}
+There are several ways that you can combine two functions $f$ and $g$ (for
+example) to produce a new, composite function of the two:
+
+\begin{enumerate}
+\item Sum: $(f+g)(x)=f(x)+g(x)$
+\item Difference: $(f-g)(x)=f(x)-g(x)$
+\item Product: $(fg)(x)=f(x)*g(x)$
+\item Quotient: $\frac{f}{g}(x)=\frac{f(x)}{g(x)}$
+\end{enumerate}
+
+\subsection{Composite Functions}
+A composite function of $f$ and $g$ is defined as follows: $f(g(x))$.
+Therefore, the range of $g$ must be limited to the domain of $f$ so that no $x$
+values can be passed to the composite function that are invalid.
+
+\section{Inverse Functions}
+Two functions $f$, and $g$ are considered to be inverses of each other, iff both
+of the following two conditions are met:
+
+\begin{enumerate}
+\item $f(g(x))=x$ for all $x$ in the domain of $g(x)$.
+\item $g(f(x))=x$ for all $x$ in the domain of $f(x)$.
+\end{enumerate}
+
+To find an inverse function algebraically, preform the following steps:
+
+\begin{enumerate}
+\item Use the Horizontal Line Test to determine if $f$ has an inverse ($f^-1$)
+  \begin{itemize}
+  \item (If it doesn't, limit the domain of $f$ so that it does.)
+  \end{itemize}
+\item{Plug in $f^-1(x)$ into the original function and isolate}
+\end{enumerate}
+\item{Plug in $f^-1(x)$ into the original function and isolate}
+\end{enumerate}
