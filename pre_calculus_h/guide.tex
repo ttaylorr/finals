@@ -1,5 +1,17 @@
 \documentclass[13pt,letterpaper,titlepage]{book}
 \usepackage{fullpage}
+\usepackage{pgfplots}
+
+\newcommand{\graph}[1] {
+  \begin{tikzpicture}
+    \begin{axis}[
+      xlabel=$x$,
+      ylabel={$f(x)=#1$}
+    ]
+      \addplot {#1};
+    \end{axis}
+  \end{tikzpicture}
+}
 
 \title{%
   Pre-Calculus H - Final Exam \\
