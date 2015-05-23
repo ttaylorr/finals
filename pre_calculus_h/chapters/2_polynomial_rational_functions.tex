@@ -1,1 +1,182 @@
 \chapter{Polynomial and Rational Functions}
+\section{Polynomials}
+A polynomial function of degree $n$ is defined as follows:
+\begin{equation}
+  f(x)=a_nx^n+a_{n-1}x^{n-1}+a_{n-2}x^{n-2}+...+a_1x+a_0
+\end{equation}
+
+Functions of this classification for which $n=2$ are defined as
+\textit{quadratic functions}, and look as follows: $f(x)=ax^2+bx+c$.
+
+\begin{itemize}
+  \item For all $a>0$, the parabola opens upward
+  \item For all $a<0$, the parabola opens downwards
+\end{itemize}
+
+The standard form of a quadratic equation is given as follows:
+\begin{equation}
+  f(x)=a(x-h)^2+k
+\end{equation}
+
+To identify the vertex of a function in this classification, simply use the
+coordinate pair $(h,k)$.  If the quadratic is not in this format, simply
+complete the square, and you will have your $h$, $k$ pair.
+
+When a quadratic opens upwards and you have the vertex, then that is the
+relative minimum of the function.  In the other case, you have the relative
+maximum of that function.
+
+\section{Higher-Order Functions}
+If you are presented with a function that has a degree higher than 2, (i.e., it
+is not a quadratic), then you can at least determine the end-behavior of that
+function.  Consider the function $f(x)=3x^3+7x^2+6$:
+
+\graph{3*x^3 + 7*x^2 + 6}
+
+We can see that the function has two limits, namely:
+\begin{itemize}
+  \item $$\lim_{x\to\infty} f(x)=\infty$$
+  \item $$\lim_{x\to-\infty} f(x)=-\infty$$
+\end{itemize}
+
+We can evaluate the limits of a function at $\infty$ and $-\infty$ simply by
+evaluating the leading term (by power), which in the case of $f(x)$ as defined
+above is $3x^3$.  If we evaluate that function at both a large positive, and
+small negative value, the sign of the output will tell us whether the limit
+approaches positive or negative infinity.
+
+\subsection{Zeros}
+\begin{enumerate}
+  \item $x=a$ is a zero of the function $f(x)$
+  \item $x=a$ is a solution of the equation $f(x)=0$
+  \item $(x-a)$ is a factor of the function $f(x)$
+  \item $(a,0)$ is an $x$-intercept of the function $f(x)$
+\end{enumerate}
+
+\subsection{Multiplicity}
+For any zero of a function, you can determine what it does at the x-axis
+(whether it crosses it or "bounces" across it) by determing the multiplicty of
+that factor.  Consider the function $f(x)=x^3-7x^2+16x-12$ which factors into
+$f(x)=(x-2)^2(x-3)$.  The factor $(x-2)$ follows the form $(x-a)^k$, where
+$a=-2$ and $k=2$.  Therefore, at $x=2$, the function will bounce across the
+x-axis because $k$ is even.  If $k$ were to be odd, it would cross through the
+axis, as it does at $x=3$.
+
+\subsection{Intermediate Value Theorem}
+If $a$ and $b$ are real numbers, and $f(x)$ is continuous and defined upon the
+interval $[a,b]$, there exists a $c$ such that $a<c<b$ and $f(a)<f(c)<f(b)$.
+
+\section{Real Zeros of Polynomial Functions}
+\subsection{Long Division}
+Much like you did in second grade, you can prefom long division upon
+polynomials.
+
+TODO
+
+You will end up with a function that can be composed as follows:
+\begin{equation}
+  f(x)=d(x)q(x)+r(x)
+\end{equation}
+
+\subsection{Synthetic Division}
+If the monomial that you are trying to divide into follows the form $(x-k)$,
+then you can preform what is known as synthetic division.  To do synthetic
+division, take note of the following steps:
+
+\begin{enumerate}
+  \item Write all of the terms, by power order (0 for powers that don't exist in
+  the original equation) for all powers $n$ in the original polynomial
+  \item Write $k$ on the left side of all of that such that $k$ is found in
+  $(x-k)$
+  \item Drop the first term
+  \item Multiply it by $k$ ($ka_n$)
+  \item Place it up under the coeffiient $a_{n-1}$
+  \item Add the two ($ka_n+a_{n-1}$)
+  \item Repeat
+\end{enumerate}
+
+\subsection{The Remainder Theorem}
+If a polynomial $f(x)$ is divided into $(x-k)$, the remainder is $r=f(k)$.
+
+\subsection{The Ratioinal Zero Test}
+If a polynomial is defined as follows:
+\begin{equation}
+f(x)=a_nx^n+a_{n-1}x^{n-1}+a_{n-2}x^{n-2}+...+a_1x+a_0
+\end{equation}
+
+Then all of the rational zeros must be defined in the set of numbers that look
+like the following:
+
+\begin{equation}
+  \text{rational zeros}=\frac{\text{factors of the constant}}{
+    \text{factors of the leading coefficient}}
+\end{equation}
+
+\section{Complex Numbers}
+So far, we have learned about numbers that come in \textit{standard form}, such
+as $1$, $3$, and others.  There is another classificaiton of numbers, called
+\textit{complex numbers} that come in the form $a+bi$.
+
+$i$ is defined as follows:
+
+\begin{equation}
+  i=\sqrt{-1}
+\end{equation}
+
+You can easily raise $i$ to several different powers (1..4) and it will obey
+certain, easily derivable rules:
+
+\begin{enumerate}
+  \item{$i^1=i$}
+  \item{$i^2=-1$}
+  \item{$i^3=i^2i^2=-i$}
+  \item{$i^4=i^2i^2=1$}
+\end{enumerate}
+
+Adding and subtracting complex numbers works as you'd expect. You add the real
+terms, and then add the complex terms, factoring out the $i$.
+
+Multiplying complex numbers is only slightly more complicated.  While it works
+normally as you'd expect, you have to remember the power rules of $i$ as defined
+above: sometimes you can end up with a negative number.
+
+\subsection{Complex Conjugates}
+To remove the complex part of a complex number, you can multiply it by the
+\textit{complex conjugate} of itself.  The complex conjugate of $(a+bi)$ is
+defined as $(a-bi)$.
+
+\subsection{Principal Square Root}
+To take the square root of a negative number, say $\sqrt{-2}$, you can remember
+the rules of the square-root, and expand the above expression into
+$\sqrt{2}\sqrt{-1}$, which is just $i\sqrt{2}$.
+
+\section{The Fundamental Theorem of Algebra}
+The \textit{Fundamental Theorem of Algebra} is defined such that for any
+function $f(x)$ which has degree $n$, there is at least one zero of $f$ in the
+complex number system.
+
+\section{Asymptotes}
+An asymptote of a function is defined as a part of a function ($f(x)$) such that
+$f(x)$ comes arbitrairly close to the asymptote, but never actually approaches
+it.  For example, $f(x)=ln(x)$ has a vertical asymptote at $x=0$.
+
+\graph{ln(x)}
+
+\begin{enumerate}
+  \item{A horizontal asymptote can be evaluated by taking the limit of a
+      function as it approaches some endpoint.  As $x$ moves to some endpoint,
+    the function $f(x)$ will approach some value, $g(x)=b$.}
+  \item{A vertical asymptote is evaluated by finding all of the $x$-values
+      outside the domain of $f(x)$.  If $f(x)$ is not defined for $x=a$, then
+      $x=a$ is a vertical asymptote of that function.}
+\end{enumerate}
+
+\section{Graphing Rational Functions}
+To graph a rational function, one must simply take note of the following steps:
+\begin{enumerate}
+  \item{Simplify $f$, if possible}
+  \item{Plot the $y$-intercept}
+  \item{Plot the $x$-intercept(s)}
+  \item{Sketch any asymptotes}
+  \item{Use curves to complete the graph}
+\end{enumerate}
