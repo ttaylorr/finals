@@ -3,14 +3,17 @@
 \usepackage{pgfplots}
 
 \newcommand{\graph}[1] {
-  \begin{tikzpicture}
-    \begin{axis}[
-      xlabel=$x$,
-      ylabel={$f(x)=#1$}
-    ]
-      \addplot {#1};
-    \end{axis}
-  \end{tikzpicture}
+  \begin{figure}[!h]
+    \centering
+      \begin{tikzpicture}
+        \begin{axis}[
+        xlabel=$x$,
+        ylabel={$f(x)=#1$}
+      ]
+        \addplot {#1};
+      \end{axis}
+    \end{tikzpicture}
+  \end{figure}
 }
 
 \title{%
