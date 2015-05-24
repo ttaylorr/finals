@@ -1,0 +1,109 @@
+\chapter{Sequences and Series}
+\section{Sequences and Series}
+An infinite sequence is the sequence whose domain lines is defined on all
+$x\in(0,\infty)$.  It is defined as follows:
+\begin{equation}
+a_1,a_2,a_3,...,a_n,...
+\end{equation}
+
+If the sequence were to only contain the first $n$ terms, it would be a
+\textit{finite sequence}.
+
+\section{Summation Notation}
+To define the series that we expressed above, we can use a notation known as
+"summation notation", which involves the use of the Greek letter
+\textit{sigma}.  Let's define the sequence that we did earlier, this time using
+summation notation:
+
+\begin{equation}
+\sum_{i=1}^na_i=a_1+a_2+a_3+a_4+...+a_n+...
+\end{equation}
+
+\subsection{Properties of Sums}
+\begin{equation}
+\sum_{i=1}^nc=cn
+\end{equation}
+
+\begin{equation}
+\sum_{i=1}^nca_i=c\sum_{i=1}^{n}a_i
+\end{equation}
+
+\begin{equation}
+\sum_{i=1}^{n}(a_i \pm b_i)=\sum_{i=1}^{n}a_i\pm\sum_{i=1}^{n}b_i
+\end{equation}
+
+\subsection{A Distinction}
+There is an important distinction to be made: The first $n$ terms of any
+sequence is referred to as the finite series, or a partial sum of teh entier
+sequence, and is denoted by the following expression:
+\begin{equation}
+\sum_{i=1}^{n}a_i=a_1+a_2+a_3+a_4+...+a_n
+\end{equation}
+
+However, the infinite sries is all of the terms in an infinite sequence, and is
+expressed by the following:
+\begin{equation}
+\sum_{i=1}^{\infty}a_i=a_1+a_2+a_3+a_4+...+a_n+...
+\end{equation}
+
+Consider the following two examples.  The first is a partial sum, and the second
+is the sum of a series:
+\begin{align*}
+\sum_{i=1}^{3}\frac{3}{10^i}=\frac{3}{10^1}+\frac{3}{10^2}+\frac{3}{10^3}\\
+=\frac{3}{10}+\frac{3}{100}+\frac{3}{1000}\\
+=0.3+0.03+0.003\\
+=0.333
+\end{align*}
+
+\begin{align*}
+\sum_{i=1}^{\infty}\frac{3}{10^i}=\frac{3}{10^1}+\frac{3}{10^2}+\frac{3}{10^3}+...
+\\
+=\frac{3}{10}+\frac{3}{10}+\frac{3}{100}+...\\
+=0.3+0.03+0.003+...\\
+=0.333...
+=\frac{1}{3}.
+\end{align*}
+
+\section{Arithmetic Sequences}
+An arithmetic sequence is one where the differences between consecutive terms
+are the same.  The sequence takes the following progression:
+\begin{equation}
+  a_1,a_1+d,a_1+2d,a_1+3d...
+\end{equation}
+
+\subsection{$n$-th term}
+Therefore, the formula for the $n$th term is:
+\begin{equation}
+  a_1+(n-1)d
+\end{equation}
+
+\subsection{$n$-th partial sum}
+To calculuate the $n$-th partial sum of the series, use the following formula:
+\begin{equation}
+  S_n=\frac{n}{2}(a_1+a_n)
+\end{equation}
+
+\section{Geometric Sequences}
+A series is geometric when each consecutive is related by a ratio to the
+previous term.  Consider the following example:
+\begin{equation}
+  a_1,a_1r,a_1r^2,...,a_1r^{n-1}
+\end{equation}
+
+\subsection{$n$-th term}
+Therefore, the $n$-th term is defined as follows:
+\begin{equation}
+  a_n=a_1r^{n-1}
+\end{equation}
+
+\subsection{Summations of Finite Series}
+The sum of a finite geometric series is given as follows:
+\begin{equation}
+  S_n=\sum_{i=1}^{n}a_1r^{i-1}=a_1\Big(\frac{1-r^n}{1-r}\Big)
+\end{equation}
+
+\subsection{Summations of Infinite Series}
+The sum of an infinite geometric series is given as follows:
+\begin{equation}
+  S=\sum_{i=1}^{\infty}a_1r^i=\frac{a_1}{1-r}
+\end{equation}
