@@ -1,0 +1,112 @@
+\chapter{Introductory Calculus}
+\section{The Newton Quotient}
+Consider any arbitrary curve.  At any point on that curve, there is a line which
+is tangent to that curve.  How might we go about finding the slope of such a
+line.  Well, if you consider two points, one some units to the left of the
+point we are targeting, and the other some arbitrary amount of units to the
+right, between those two points is a secant line.  If you were to take the limit
+of the distance between the point we are targeting and the ones that we have
+placed to the left and right of it, we would intuitively approach the slope of
+the line tangent to the curve at that point.
+
+This process is summarized in the Newton quotient, which is drawn out below:
+\begin{equation}
+m_{tan}=\lim_{\Delta x\to 0} \frac{f(x+\Delta x)-f(x)}{\Delta x}
+\end{equation}
+
+\section{Delta-Epsilon}
+Let's say that for some function $f(x)$ that as $x\to c$, $f(x)\to L$.  That is
+to say:
+\begin{equation}
+\lim_{x \to c} f(x) = L
+\end{equation}
+
+We can describe $\epsilon$ as a quantity that is the maximum distance the limit
+$L$ can be away from the actual value (on a continuous function) at $f(c)$.
+
+Furthemore, $\delta$ is the units away from $x$ to $c$ as we take the limit of
+$f$.
+
+Therefore, we can summarize these two statements and presume that for every
+$\epsilon > 0$, there is a $\delta > 0$ such that for all $x$:
+\begin{equation}
+0 \lt |x-c| < \delta
+\end{equation}
+
+and...
+\begin{equation}
+|f(x)-L| < \epsilon
+\end{equation}
+
+\section{The Derivative}
+The derivative of $f(x)$ is described as $\frac{d}{dx}f(x)$ and is itself a
+function.  The derivative of $f$ is a function that for any $x$ produces a value
+equal to the slope of the tangent line of $f$ at $x$.
+
+One way to find the derivative of a function is to take the Newton Quotient of
+function.  This is true because:
+\begin{equation}
+\frac{d}{dx}f(x)=\lim_{\Delta x\to 0} \frac{f(x+\Delta x)-f(x)}{\Delta x}
+\end{equation}
+
+\textit{Note}: since the derivative of a function and you can take the deriative
+of any function, you can take the derivative of a function an arbitrary number
+of times. Physics is the only real world application that requires you to take
+the derivative of a function more than two times, but this class frequently
+requires you to take the second derivative of a function.  This is often
+expressed by the following notation:
+\begin{equation}
+\frac{d^2y}{dx^2}f(x)
+\end{equation}
+
+However, there are rules that we can apply to simplify the process of finding a
+derivative.
+
+\subsection{Derivation Rules}
+\subsubsection{The Constant Rule}
+\begin{equation}
+\frac{d}{dx}c=0
+\end{equation}
+
+\subsubsection{The Constant Multiple Rule}
+\begin{equation}
+\frac{d}{dx}cf(x)=c\frac{d}{dx}f(x)
+\end{equation}
+
+\subsubsection{The Power Rule}
+\begin{equation}
+\frac{d}{dx}x^n=nx^{n-1}
+\end{equation}
+
+\subsubsection{The Sum and Difference Rule}
+\begin{equation}
+\frac{d}{dx}\big(f(x)\pm g(x)\big)=\frac{d}{dx}f(x) \pm \frac{d}{dx}g(x)
+\end{equation}
+
+\subsubsection{The Product Rule}
+\begin{equation}
+\frac{d}{dx}\big(f(x)g(x)\big)=f(x)\frac{d}{dx}g(x)+g(x)\frac{d}{dx}f(x)
+\end{equation}
+
+\subsubsection{The Quotient Rule}
+\begin{equation}
+\frac{d}{dx}\Bigg(\frac{f(x)}{g(x)}\Bigg)=\frac{f'(x)g(x)-g'(x)f(x)}{g^2(x)}
+\end{equation}
+
+\subsubsection{The Chain Rule}
+\begin{equation}
+\frac{d}{dx}f(g(x))=f'(g(x))g'(x)
+\end{equation}
+
+\section{Implicit Differentation}
+Consider the function that defines the unit-circle: $x^2+y^2=1$.  How would you
+go about differentiating it?  Sure, we know that $\frac{d}{dx}x^2=2x$, but what
+does $\frac{d}{dx}y^2$ evaluate to?  Differentation is easy when the variable we
+are differentating agrees with the variable that we are taking the differential
+with respect to, but what happens when they don't?
+
+To evaluate $\frac{d}{dx}y^2$, we preform the normal differentation of $a^b$, so
+we're left with $2y$, but we still haven't solved the problem of the mismatched
+variables.  The solution is simple: we simply multiply the quantity that we have
+partially differentiated by the result of differentating the free-hanging
+variable: $2y\frac{dy}{dx}$
