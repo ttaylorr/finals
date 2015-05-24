@@ -1,1 +1,85 @@
 \chapter{Exponential and Logarithmic Functions}
+\section{Exponential Functions}
+An exponential function is a defined as any function, $f(x)$ such that the
+independent variable $x$ is bound up somewhere in the exponent.  $f(x)=3^x$ is
+an example of such a function:
+
+\graph{3^x}
+
+This classification of functions have a few simple properties:
+
+\begin{itemize}
+  \item{They are defined for all $x\in(-\infty,\infty)$}
+  \item{Their range is: $(0, \infty)$}
+  \item{They have intercepts at $(0,1)$}
+  \item{They are increasing on their entire domain}
+  \item{The $x$-axis serves as a horizontal asymptote}
+  \item{They are smooth and continuous}
+\end{itemize}
+
+\subsection{Interest Functions}
+These types of functions have applications in a few different areas.  For us, we
+will be primarily concerned with manually and continually compouding interest:
+
+\begin{itemize}
+  \item{For $n$ compoundings per year: $A=P(1+\frac{r}{n})^{nt}$}
+  \item{For coninuous compounding: $A=Pe^{rt}$}
+\end{itemize}
+
+\section{Logarithmic Functions}
+The parent function of the logarithmic family is defined as follows:
+\begin{equation}
+  f(x)=\log_ax
+\end{equation}
+
+\graph{ln(x)}
+
+\subsection{Properties of Logarithms}
+\begin{itemize}
+  \item{$\log_a1=0$}
+  \item{$\log_a=1$}
+  \item{$\log_aa^x=x$}
+  \item{If $\log_ax=\log_ay$ then $x=y$}
+\end{itemize}
+
+\section{Properties of Logarithms}
+A logarithm of any base $a$ can be represented as a quotient of two other
+logarithms of base $b$, according to the following (Change of Base rule)
+\begin{equation}
+  \log_ax=\frac{\log_bx}{\log_ba}
+\end{equation}
+
+The product property states that you can expand a logarithm that is the product
+of two numbers $u$ and $v$ into two logarithms that are added together, as in
+the following generalization:
+\begin{equation}
+  \log_a(uv)=\log_au+\log_av
+\end{equation}
+
+The quotient property states what is already implied, that a logarithm
+represented as a quotient of two numbers $u$ and $v$ can be expanded equally as
+a an expression of two logarithms which get subtracted, as in the following
+generalization:
+\begin{equation}
+  \log_a(\frac{u}{v})=\log_au-\log_av
+\end{equation}
+
+The power property is implied from the product rule.  You can expand out a power
+wrapped up in a logarithm into a scalar that is multiplied to the logarithmic
+expression, as in the following generalization:
+\begin{equation}
+  \log_au^n=n\log_au
+\end{equation}
+
+\section{Solving Logarithmic Functions}
+You can apply the rules that have been previously explained in order to solve
+for expressions bound up in logarithmic or exponential expressions.  The genral
+case for solving these types of problems is explained below:
+
+\begin{enumerate}
+  \item{Reduce all variables that are bound in exponential expressions to
+    loosely hanging variables that are included in logarithmic expressions}
+  \item{Apply the three rules that are stated above}
+  \item{Expand}
+  \item{Simplify}
+\end{enumerate}
