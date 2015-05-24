@@ -1,0 +1,179 @@
+\chapter{Trigonometric Functions}
+\section{Radians}
+A radian is a measure of the central angle $\theta$ such that the arc $s$
+intercepted by the angle is equal to the length of the radius, $r$.
+
+One radian is the measure of a central angle $\theta$ that intercepts an arc $s$
+equal to the length of the radis $r$ of the circle: ($\theta$ is measured in
+radians)
+\begin{equation}
+  \theta=\frac{s}{r}
+\end{equation}
+
+There are a few key terms that are used when describing angles inside of a
+circle:
+\begin{description}
+  \item[Initial side]{The starting position of the ray}
+  \item[Terminal side]{The other side of the ray}
+  \item[Vertex]{The intersection of the initial and terminal side}
+\end{description}
+
+\subsection{Converting beteen radians and degrees}
+\begin{enumerate}
+  \item{To convert degrees to radians, simply multiply degrees by
+    $\frac{\pi\text{rad}}{180}$}
+  \item{To convert radians to degrees, multiply radians by
+    $\frac{180}{\pi\text{rad}}$}
+\end{enumerate}
+
+\subsection{Linear and Angular Speed}
+Arc legth is defined for a length $s$ as the quantity of the length of the
+radius, $r$ and the central angle that $s$ is intercepted by, $\theta$:
+\begin{equation}
+  s=r\theta
+\end{equation}
+
+Therefore, linear speed is defined as the quotient of the arc-length and the
+time that has passed:
+\begin{equation}
+  \text{linear speed}=\frac{\text{arc length}}{\text{time}}=\frac{s}{t}
+\end{equation}
+
+And as follows, angular speed is the same formula, except we are looking at
+radians per second, as in the following equation:
+\begin{equation}
+  \text{angular speed}=\frac{\text{central angle}}{\text{time}}=\frac{\theta}{t}
+\end{equation}
+
+\section{Unit Circle Trigonometry}
+Consider a unit circle (a circle of radius $1$ centered around $(0,0)$) defined
+by the following equation: $x^2+y^2=1$.
+
+For any point \textit{on} the circle, the coordinate pair that will intersect
+the edge of the circle is defined as $P(\theta)=(cos(\theta),sin(\theta))$.
+
+\begin{itemize}
+  \item{$sin(t)=y$}
+  \item{$cos(t)=x$}
+  \item{$tan(t)=\frac{y}{x}$}
+  \item{$csc(t)=\frac{1}{y}$}
+  \item{$sec(t)=\frac{1}{x}$}
+  \item{$cot(t)=\frac{x}{y}$}
+\end{itemize}
+
+\subsection{Even and Odd Trigonometric Functions}
+\begin{itemize}
+  \item{Even:}
+    \begin{itemize}
+      \item{$cos(-t)=cos(t)$}
+      \item{$sec(-t)=sec(t)$}
+    \end{itemize}
+  \item{Odd:}
+    \begin{itemize}
+      \item{$sin(-t)=-sin(t)$}
+      \item{$csc(-t)=-csc(t)$}
+      \item{$tan(-t)=-tan(t)$}
+      \item{$cot(-t)=-cot(t)$}
+    \end{itemize}
+\end{itemize}
+
+\section{Right Triangle Trigonmetry}
+Consider a right triangle.  A geometric figure with three sides, two of which
+meet at a $90\deg$ angle.  The other side is reffered to as the hypoteneuse, and
+the length of that side is equal to $\sqrt{a^2+b^2}$.
+
+There are six trigonometric functions that we will study that relate to right
+triangles.  They are defined as follows:
+\begin{itemize}
+  \item{$sin(\theta)=\frac{\text{opp}}{\text{hyp}}$}
+  \item{$cos(\theta)=\frac{\text{adj}}{\text{hyp}}$}
+  \item{$tan(\theta)=\frac{\text{opp}}{\text{adj}}$}
+  \item{$csc(\theta)=\frac{1}{sin(\theta)}$}
+  \item{$sec(\theta)=\frac{1}{cos(\theta)}$}
+  \item{$cot(\theta)=\frac{1}{tan(\theta)}$}
+\end{itemize}
+
+\subsection{Trigonometric Identities}
+
+\subsubsection{Reciprocal Identities}
+This set of identities defines the relationships between pairs of trigonometric
+functions as inverses of each other.
+
+\begin{itemize}
+  \item{$sin(\theta)=\frac{1}{csc(\theta)}$}
+  \item{$cos(\theta)=\frac{1}{sec(\theta)}$}
+  \item{$tan(\theta)=\frac{1}{cot(\theta)}$}
+  \item{$csc(\theta)=\frac{1}{sin(\theta)}$}
+  \item{$sec(\theta)=\frac{1}{cos(\theta)}$}
+  \item{$cot(\theta)=\frac{1}{tan(\theta)}$}
+\end{itemize}
+
+\subsubsection{Quotient Identites}
+This set of identnties defines two trigonometric functions as quotients of other
+pairs of trigonometric functions.
+
+\begin{itemize}
+  \item{$tan(\theta)=\frac{sin(\theta)}{cos(\theta)}$}
+  \item{$cot(\theta)=\frac{cos(\theta)}{sin(\theta)}$}
+\end{itemize}
+
+\section{Graphs of Sine and Cosine Functions}
+The sine function is defined for all $x\in(-\infty,\infty)$, and has a range of
+$[-1,1]$.  It has a period of $2\pi$ and has $x$-intercepts at $(n\pi, 0)$ and
+$y$-intercepts at the origin.  It is an odd-function with original symmetry.
+
+On the other hand, the cosine is also defined for all $x\in(-\infty,\infty)$,
+and has a range of $[-1,1]$.  It has a period of $2\pi$ and has $x$-intercepts
+at $(\frac{\pi}{2}+n\pi,0)$.  It has a $y$-intercept at $(1,0)$ and is an even
+function with $y$-axis symmetry.
+
+\subsection{Amplitude}
+The amplitude of a function is defined as one half of the distance between its
+relative minimum and maximum points.  For any trigonmetric function of the form
+$y=a\text{sin}(x)$ or $y=a\text{cos}(x)$, the amplitude is $|a|$.
+
+\subsection{Period}
+The period of a function is the time it takes the function to repeat itself, for
+any point.  The period itself is not a function, it is a constant value for all
+points \textit{across} a function.  For any function that is defined by the
+pattern: $y=a\text{sin}(x)$ or $y=a\text{cos}(x)$, the period is defined by the
+following equation:
+\begin{equation}
+  \text{Period}=\frac{2\pi}{b}
+\end{equation}
+
+\section{Graphs of other Trigonometric Functions}
+
+\subsection{The Tangent and its Inverse}
+The graph of the tangent function is defined for all real numbers $x$, such that
+$x\neq\frac{\pi}{2}+n\pi$.  Its range is defined for all
+$x\in(-\infty,\infty)$ and has $x$-intercepts at $(n\pi,0)$, and a
+$y$-intercept at the origin.  It has vertical asymptotes at
+$x=\frac{\pi}{2}+n\pi$ and is an odd function with origianl symmetry.
+
+The function $f(x)=cot(x)$ is exactly the $tan(x)$ function, but shifted
+$\frac{\pi}{2}$ units to the right.  That is to say that
+$f(x)=cot(x)=tan(x)+\frac{\pi}{2}$.
+
+\subsection{The Cosecant and Secant Functions}
+These functions are very easy to reason about.  Take their inverse functions,
+and draw plot them on a graph.  Define vertical asymptotes when the origianl
+function is $f(x)=0$, and draw points at the relative minimum and maximum across
+the original function.  Stretch those points to the asymptotes through
+continuous curves, and you have the function that you are trying to sketch.
+
+The same rules apply when applying transformations to these functions.
+
+\section{Inverse Trignonometric Functions}
+The inverse sine function, or $f(x)=arcsin(x)$ is defined over the interval
+$[-\frac{\pi}{2},\frac{\pi}{2}]$.  Simply take the sine function at those two
+endpoints and plot the inverse function.  Apply transformations as normal.
+
+\subsection{Characteristics of Inverse Trigonometric Functions}
+\begin{description}
+  \item[$f(x)=arcsin(x)$]{Defined over all $x\in[-1,1]$; $-\frac{\pi}{2} \leq
+    f(x) \leq \frac{pi}{2}$}
+  \item[$f(x)=arccos(x)$]{Defined over all $x\in[-1,1]$; $0 \leq f(x) \leq \pi$}
+  \item[$f(x)=arctan(x)$]{Defined over all $x\in(-\infty,\infty)$;
+    $-\frac{\pi}{2} \leq f(x) \leq \frac{\pi}{2}$}
+\end{description}
